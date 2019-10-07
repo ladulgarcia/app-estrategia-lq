@@ -4,7 +4,7 @@ const User = require('../models/User');
 const passport = require('../config/passport');
 const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
-  //OJO: REVISAR EL TIPO DE SERVICIO DEL EMAIL
+  //OJO: TIPO DE SERVICIO DEL EMAIL
   host: "smtpout.secureserver.net",
   secureConnection: true,
   port: 465,

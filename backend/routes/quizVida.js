@@ -20,6 +20,22 @@ router.post('/fase1/:id', isAuth, (req, res, next) => {
     .catch((err) => res.status(500).json({ err }));
 });
 
+router.get('/fase3/:id', isAuth, (req, res, next) => {
+  const { id } = req.params
+  User.findById({ _id: id })
+    .then((user) => res.status(200).json({ user }))
+    .catch((err) => res.status(500).json({ err }));
+});
+
+router.post('/fase3/:id', isAuth, (req, res, next) => {
+  const { id } = req.params
+  const fase1 = req.body
+  const owner = id
+  Vida.create({ owner, fase1 })
+    .then(vida => res.status(200).json({ vida }))
+    .catch((err) => res.status(500).json({ err }));
+});
+
 router.get('/fase2/:id', isAuth, (req, res, next) => {
   // const questions = []
   function rand() {
