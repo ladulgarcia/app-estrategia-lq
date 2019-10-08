@@ -1,5 +1,5 @@
 body {
-  margin: 2vh 20vw 1vh 20vw;
+  margin: 2vh 15vw 1vh 15vw;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -12,4 +12,10 @@ ul {
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.inputmeasure {
+  width: 90% !important;
+}
+.card{
+ text-align: justify; 
 }

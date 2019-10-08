@@ -8,16 +8,16 @@ const SERVICE = axios.create({ withCredentials: true, baseURL });
 
 const MY_SERVICE = {
   test: async () => {
-    return await SERVICE.get('auth/');
+    return await SERVICE.get('api/auth/');
   },
   signup: async (user) => {
-    return await SERVICE.post('auth/signup', user);
+    return await SERVICE.post('api/auth/signup', user);
   },
   login: async (user) => {
-    return await SERVICE.post('auth/login', user);
+    return await SERVICE.post('api/auth/login', user);
   },
   logout: async () => {
-    return await SERVICE.get('auth/logout');
+    return await SERVICE.get('api/auth/logout');
   }
 };
 

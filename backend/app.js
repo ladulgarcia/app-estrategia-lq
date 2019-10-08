@@ -50,9 +50,9 @@ const auth = require('./routes/auth');
 const questionsVida = require('./routes/quizVida')
 const questionsCarrera = require('./routes/quizCarrera')
 app.use('/', index);
-app.use('/auth', auth);
-app.use('/quizVida', questionsVida)
-app.use('/quizCarrera', questionsCarrera)
+app.use('/api/auth', auth);
+app.use('/api/quizVida', questionsVida)
+app.use('/api/quizCarrera', questionsCarrera)
 
 // Uncomment this line for production
 // app.get('/*', (req, res) => res.sendFile(__dirname + '/public/index.html'));

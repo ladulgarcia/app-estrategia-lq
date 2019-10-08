@@ -9,9 +9,9 @@ const carreraSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "User"
     },
-    fase1: Object,  
-    fase2: Object,
-    fase3: Object,
+    fase1: [Object],
+    fase2: [Object],
+    fase3: [Object],
   },
   {
     timestamps: true

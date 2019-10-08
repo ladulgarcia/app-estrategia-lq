@@ -15,8 +15,16 @@ class Signup extends Component {
     this.setState({ user });
   };
 
+  onSelect = (e) =>{
+    const {user} = this.state
+    const key = e.target.name
+    user[key] = e.target.value
+    this.setState({user})
+  }
+
   onSubmit = (e) => {
     e.preventDefault();
+    console.log(this.state.user)
     AUTH_SERVICE.signup(this.state.user)
       .then((response) => {
         console.log(response.data);
@@ -60,7 +68,7 @@ class Signup extends Component {
                     <label style={{ fontSize: '1rem', color: "#bdbdbb", padding: "0" }}>Role</label>
                     <br></br>
                     <select
-                      onChange={this.handleInput}
+                      onChange={this.onSelect}
                       type="text"
                       name="role"
                       placeholder="Role"

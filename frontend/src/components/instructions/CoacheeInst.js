@@ -15,7 +15,7 @@ class CoacheeInst extends Component {
           <div>
             <h1>PRELIMINARES COMO COACHEE</h1>
             <p>Se recomienda que trabajes en tu tablero de Vida o Carrera de la mano de tu coach o tu líder de la organización donde laboras.
-              Se sugiere imprimir el tablero <b> Estrategia LQ®</b> en blanco para que tengas un borrador durante el trabajo con tu coach.
+              Se sugiere imprimir el tablero <b> Estrategia LQ®</b> en blanco para que tengas un borrador durante el trabajo con tu coach. El proceso será de la mano de tu coach y en el tablero solo se plasman ideas clave.
             </p>
             <Form.Item>
               <Input type="submit" value="Tablero en blanco" style={{ width: '20vw', marginRight: '0vw', marginTop: '1vh' }} />
@@ -27,17 +27,17 @@ class CoacheeInst extends Component {
             </Form.Item>
             <p> Cuando termines de trabajar con tu tablero, imprímelo y colócalo en un lugar donde lo tengas a la vista la mayor parte de tu día y que puedas verlo en modo “zoom-out”.
             <br />
-            <i> <b> El tablero de vida y de negocios es una herramienta que nos permite actuar tomando en cuenta el todos los espectros en la vida del Ser Humano.</b></i>
+              <i> <b> El tablero de vida y de negocios es una herramienta que nos permite actuar tomando en cuenta el todos los espectros en la vida del Ser Humano.</b></i>
             </p>
-            
-              <b><h3>Proyecto</h3></b>
-              <b>¡Ahora sí, comencemos! </b>Escoge en qué proyecto quieres trabajar con tu tablero de Estrategia LQ®: <br />
-            
+
+            <b><h3>Proyecto</h3></b>
+            <b>¡Ahora sí, comencemos! </b>Escoge en qué proyecto quieres trabajar con tu tablero de Estrategia LQ®: <br />
+
             <div>
               <Link to="/quizVida">Estrategia de Vida</Link>
               <Link to="quizCarrera">Estrategia de Carrera</Link>
             </div>
-            <br/>
+            <br />
             <i> “El mejor ajedrecista es el que ve el tablero completo”</i> - Garry Kasparov
           </div>
         </div>

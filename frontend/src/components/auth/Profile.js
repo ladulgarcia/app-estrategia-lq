@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { MyContext } from '../../context/index';
-//cambiar paqueteria de estilos a uikit
+// import { MyContext } from '../../context/index';
 import { Button } from 'antd';
-
-
 
 class Profile extends Component {
 
@@ -30,6 +27,7 @@ class Profile extends Component {
   render() {
     const user = this.state
     return (
+
       <div style={{ display: 'flex', marginLeft: '10%', marginTop: '10%', width: '80vw', height: '80vh', flexDirection: 'column', backgroundImage: 'url("/assets/oval-bg.png")', backgroundSize: 'cover' }}>
         <div style={{ marginTop: '15vh', marginLeft: '10vw' }}>
           <p style={{ fontSize: '3rem', marginTop: "6vh" }}>Login</p>
@@ -46,5 +44,5 @@ class Profile extends Component {
   }
 }
 
-Profile.contextType = MyContext;
+// Profile.contextType = MyContext;
 export default Profile;
