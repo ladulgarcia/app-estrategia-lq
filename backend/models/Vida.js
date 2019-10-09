@@ -15,5 +15,4 @@ const vidaSchema = new Schema(
     timestamps: true
   }
 )
-
 module.exports = model('Vida', vidaSchema);

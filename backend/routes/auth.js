@@ -39,7 +39,7 @@ router.post('/signup', (req, res, next) => {
 
         text: `Hola ${user.name} 
           Por favor da click en el enlace aquí abajo para confirmar tu cuenta ${user.role} de : 
-          ${req.headers.origin}/auth/confirm/${user.confirmationCode}
+          ${req.headers.origin}/api/auth/confirm/${user.confirmationCode}
           Bienvenido a tu sesión de coaching de Estrategia LQ® &copy.`   
       })
       res.status(201).json({ user })

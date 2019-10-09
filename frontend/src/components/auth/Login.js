@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AUTH_SERVICE from '../../services/index';
 import { Link } from 'react-router-dom'
 import { Card, Input, Form } from 'antd';
-// import { MyContext } from '../../context';
+ import { MyContext } from '../../context';
 
 class Login extends Component {
   state = {
@@ -20,9 +20,14 @@ class Login extends Component {
     e.preventDefault();
     AUTH_SERVICE.login(this.state.user)
       .then((response) => {
-        console.log(this.context)
+        console.log(this.state.user);
         this.context.logUser(response.data.user);
-        this.props.history.push('/profile');
+        if (response.data.user.role === 'Coach') {
+          this.props.history.push('/CoachInst');
+        } else {
+          this.props.history.push('/coacheeInst');         
+        }
+
       })
       .catch((error) => {
         console.log(error);

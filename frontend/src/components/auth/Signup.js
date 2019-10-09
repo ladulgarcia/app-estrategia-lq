@@ -74,6 +74,7 @@ class Signup extends Component {
                       placeholder="Role"
                       style={{ width: '20vw', height: '4vh', backgroundColor: "#f0efe9" }}
                     >
+                      <option>Select Role</option>
                       <option value='Coachee'>Coachee</option>
                       <option value='Coach'>Coach</option>
                     </select>

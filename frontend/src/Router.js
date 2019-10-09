@@ -9,6 +9,9 @@ import CoacheeInst from './components/instructions/CoacheeInst';
 import CoachInst from './components/instructions/CoachInst';
 import QuizVida from './components/quiz/QuizVida';
 import QuizCarrera from './components/quiz/QuizCarrera';
+import BoardVida from './components/tablero/BoardVida';
+import BoardCarrera from './components/tablero/BoardCarrera';
+
 //import './App.css';
 
 
@@ -23,6 +26,8 @@ const Router = () => (
       <Route exact path="/CoachInst" component={CoachInst} />
       <Route exact path="/QuizVida" component={QuizVida} />
       <Route exact path="/QuizCarrera" component={QuizCarrera} />
+      <Route exact path="/BoardVida" component={BoardVida} />
+      <Route exact path="/BoardCarrera" component={BoardCarrera} />
       {/* <Route exact path="/QuizCarrera" component={QuizCarrera} /> */}
     </Switch>
   </BrowserRouter>
