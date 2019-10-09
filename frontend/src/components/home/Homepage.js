@@ -6,6 +6,7 @@ class Homepage extends Component {
   render() {
     return (
       <div>
+        <div style={{ background: '#ECECEC', padding: '5px' }}></div>
         <div>
           <Link to="/signup">Sign up</Link>
           <Link to="Login">Log in</Link>
@@ -19,28 +20,17 @@ class Homepage extends Component {
             </p>
             <p>
               <b><h2> ¿Cuáles son los beneficios de utilizar Estrategia LQ?</h2></b>
-              <ul>
-                <li> Claridad para desarrollar proyectos </li>
-                <li> Desarrollo de la visión “zoom-out” para considerar el todo.</li>
-                <li> Identificación de obstáculos y recursos propios.</li>
-                <li> Reconocimiento del auto sabotaje.</li>
-                <li> Desarrollo del pensamiento estratégico.</li>
-                <li> Ayuda a enfocarse en acciones que generan resultados exponenciales.</li>
-                <li> Evita el desperdicio de energía en acciones sin transcendencia.</li>
-                <li> Da flexibilidad para transformar estrategias.</li>
-                <li> Disociación: reduce los niveles de estrés y aumenta los de motivación.</li>
-                <li> Práctico: puedes diseñar tu  propio tablero, imprimirlo y modificar tu estrategia en cualquier momento.</li>
-              </ul>
+              <br/>Claridad para desarrollar proyectos 
+              <br/>Desarrollo de la visión “zoom-out” para considerar el todo.
+              <br/> Identificación de obstáculos y recursos propios.
+              <br/>  Reconocimiento del auto sabotaje.
+              <br/>  Desarrollo del pensamiento estratégico.
+              <br/>  Ayuda a enfocarse en acciones que generan resultados exponenciales.
+              <br/>  Evita el desperdicio de energía en acciones sin transcendencia.
+              <br/>  Da flexibilidad para transformar estrategias.
+              <br/>  Disociación: reduce los niveles de estrés y aumenta los de motivación.
+              <br/>  Práctico: puedes diseñar tu  propio tablero, imprimirlo y modificar tu estrategia en cualquier momento.
             </p>
-            <p>
-              <b><h3>Proyecto</h3></b>
-              Escoge en qué proyecto quieres trabajar con tu tablero de Estrategia LQ®: <br />
-              <i> “El mejor ajedrecista es el que ve el tablero completo”</i> - Garry Kasparov
-            </p>
-            <div>
-              <Link to="/quizVida">Estrategia de Vida</Link>
-              <Link to="quizCarrera">Estrategia de Carrera</Link>
-            </div>
           </div>
         </div>
       </div>

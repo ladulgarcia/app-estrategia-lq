@@ -18,6 +18,9 @@ const MY_SERVICE = {
   },
   logout: async () => {
     return await SERVICE.get('api/auth/logout');
+  },
+  getVida: async (id) => {
+    return await SERVICE.get(`api/quizVida/fase1/${id}`);
   }
 };
 

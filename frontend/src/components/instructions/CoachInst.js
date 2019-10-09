@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import { Card } from 'antd';
+import { Button } from 'antd';
 // import { Input, Form } from 'antd';
 
 class CoachInst extends Component {
@@ -47,9 +47,9 @@ class CoachInst extends Component {
           <b><h3>Proyecto</h3></b>
           <b>¡Ahora sí, comencemos el acompañamiento de un Ser Humano en sus proyectos!</b>
           <div>
-            <Link to="/quizVida">Estrategia de Vida</Link>
-            <Link to="/quizCarrera">Estrategia de Carrera</Link>
-          </div>
+              <Link to="/QuizVida"><Button type="primary"> Estrategia de Vida</Button></Link>
+              <Link to="/QuizCarrera"><Button type="danger">Estrategia de Carrera</Button></Link>
+            </div>
           <br />
         </div>
       </div>

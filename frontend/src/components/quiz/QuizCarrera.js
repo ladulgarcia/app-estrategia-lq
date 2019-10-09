@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Card, Col, Row, Input, Form } from 'antd'
+import { Card, Col, Row, Input, Button } from 'antd'
 
 class QuizCarrera extends Component {
   state = {
@@ -81,7 +81,7 @@ class QuizCarrera extends Component {
               <h3>ESTADO ACTUAL</h3>
               <Row gutter={30}>
                 <Col span={4} offset={2}>
-                  <Card title="1. ANTECEDENTES" style={{ width: 230 }}>
+                  <Card title="1. ANTECEDENTES" style={{ width: 230 }} headStyle={{ background: "#a0d911" }}>
                     <br />
                     <br />
                     <p>¿Cuáles son los antecedentes de este proyecto?</p>
@@ -92,7 +92,7 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="2. ESTATUS" style={{ width: 230 }}>
+                  <Card title="2. ESTATUS" style={{ width: 230 }} headStyle={{ background: "#a0d911" }}>
                     <p>¿En qué etapa de realización está este proyecto?
                       <br />(Opciones: Arranque / Ajuste / Planeación /
                       <br /> Stand by / Sueño
@@ -101,7 +101,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="3. EMOCIONES" style={{ width: 230 }}>
+                  <Card title="3. EMOCIONES" style={{ width: 230 }} headStyle={{ background: "#a0d911" }}>
                     <p>¿Qué emoción(es) tienes con respecto a este proyecto?
                     Del 0 al 10, ¿qué tan intensas son? <i>(Si hay mas de una emoción, ¿en qué porcentaje está cada una de ellas?)</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="emociones" maxlength="70" placeholder="Palabras clave" />
@@ -109,7 +109,7 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="4. GENTE" style={{ width: 230 }}>
+                  <Card title="4. GENTE" style={{ width: 230 }} headStyle={{ background: "#a0d911" }}>
                     <br />
                     <p>¿Quiénes son los involucrados en este proyecto?
                     <br />¿Cuál es su estado con respecto a este proyecto?</p>
@@ -118,7 +118,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="5. FINANZAS" style={{ width: 230 }}>
+                  <Card title="5. FINANZAS" style={{ width: 230 }} headStyle={{ background: "#a0d911" }}>
                     <br />
                     <p>¿Cuál es la situación financiera actual con respecto a este proyecto?
                     <br />  Mídelo del 0 al 10</p>
@@ -135,7 +135,7 @@ class QuizCarrera extends Component {
               <h3>RECURSOS</h3>
               <Row gutter={30}>
                 <Col span={4} offset={2}>
-                  <Card title="6. TALENTO" style={{ width: 230 }}>
+                  <Card title="6. TALENTO" style={{ width: 230 }} headStyle={{background:"#13c2c2"}}>
                     <p>¿Cuáles son los talentos que tienes para impulsar este proyecto?
                     Tip: El talento es algo para lo que eres muy bueno.</p>
                     <br />
@@ -144,7 +144,7 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="7. CAPITAL SOCIAL" style={{ width: 230 }}>
+                  <Card title="7. CAPITAL SOCIAL" style={{ width: 230 }} headStyle={{background:"#13c2c2"}}>
                     <p>¿Con qué…
                     <br /> Contactos
                     <br />  Relaciones
@@ -154,7 +154,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="8. EQUIPO" style={{ width: 230 }}>
+                  <Card title="8. EQUIPO" style={{ width: 230 }} headStyle={{background:"#13c2c2"}}>
                     <br />
                     <p>¿Con cuáles personas cuentas para este proyecto?
                       ¿Qué es lo que aportan?</p>
@@ -164,14 +164,14 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="9. INFRAESTRUCTURA" style={{ width: 230 }}>
+                  <Card title="9. INFRAESTRUCTURA" style={{ width: 230 }} headStyle={{background:"#13c2c2"}}>
                     <p>¿Cuál es la infraestructura con la que cuentas para este proyecto? <i>(Ej. Equipos de cómputo, teléfonos, instalaciones, sitio web, vehículos u otros)</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="infraestructura" maxlength="70" placeholder="Palabras clave" />
                   </Card>
                 </Col>
 
                 <Col span={4}>
-                  <Card title="10. FINANCIERO" style={{ width: 230 }}>
+                  <Card title="10. FINANCIERO" style={{ width: 230 }} headStyle={{background:"#13c2c2"}}>
                     <br />
                     <p>¿Con qué recursos económicos cuentas para este proyecto?</p>
                     <br />
@@ -187,7 +187,7 @@ class QuizCarrera extends Component {
               <h3>OBSTÁCULOS</h3>
               <Row gutter={30}>
                 <Col span={4} offset={2}>
-                  <Card title="14. SOMBRA" style={{ width: 230 }}>
+                  <Card title="14. SOMBRA" style={{ width: 230 }} headStyle={{background:"#40a9ff"}}>
                     <p>¿Qué parte de ti está saboteando este proyecto? Tómate 20 segundos en silencio antes de responder.
                     <br /> <i>(Ej. Mi inseguridad, mi soberbia, mi rigidez, mi sobreprotección, mi Contreras interior, mi yo perfeccionista u otro)</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="sombra" maxlength="70" placeholder="Palabras clave" />
@@ -195,7 +195,7 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="15. CREENCIAS" style={{ width: 230 }}>
+                  <Card title="15. CREENCIAS" style={{ width: 230 }} headStyle={{background:"#40a9ff"}}>
                     <p>Identifica una creencia tuya que está obstaculizando este proyecto. Tómate 30 segundos en silencio antes de responder.
                     <br /><i>(Ej. Creo que no me lo merezco, el dinero es malo o que no se puede confiar en la gente)</i></p>
                     <br />
@@ -203,7 +203,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="16. INVOLUCRADOS" style={{ width: 230 }}>
+                  <Card title="16. INVOLUCRADOS" style={{ width: 230 }} headStyle={{background:"#40a9ff"}}>
                     <br />
                     <p>¿Existen situaciones o actitudes de los involucrados que estén afectando el proyecto?
                     <br /><i>(Ej. Resistencia al cambio, falta de comunicación, falta de compromiso, rotación, otros)</i></p>
@@ -212,7 +212,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="17. ENTORNO" style={{ width: 230 }}>
+                  <Card title="17. ENTORNO" style={{ width: 230 }} headStyle={{background:"#40a9ff"}}>
                     <br />
                     <br />
                     <p>¿Hay algo en el que entorno que esté siendo un obstáculo para el proyecto? <i>(Ej. Mercado, competencia, tendencias, otros)</i></p>
@@ -223,7 +223,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="18. CANDADO" style={{ width: 230 }}>
+                  <Card title="18. CANDADO" style={{ width: 230 }} headStyle={{background:"#40a9ff"}}>
                     <br />
                     <p>Del 0 al 10, ¿qué tanto está en tus manos este proyecto?
                     <br />¿Qué tanto te motiva?
@@ -244,7 +244,7 @@ class QuizCarrera extends Component {
                 <br />(OJO 👁: con uno es suficiente, máximo tres).</p>
               <Row gutter={30}>
                 <Col span={4} offset={6}>
-                  <Card title="19. OBJETIVO 1" style={{ width: 230, height: 150 }}>
+                  <Card title="19. OBJETIVO 1" style={{ width: 230, height: 150 }} headStyle={{background:"#f5222d"}}>
                     <p>
 
                     </p>
@@ -253,7 +253,7 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="20. OBJETIVO 2" style={{ width: 230, height: 150 }}>
+                  <Card title="20. OBJETIVO 2" style={{ width: 230, height: 150 }} headStyle={{background:"#f5222d"}}>
                     <p>
 
                     </p>
@@ -261,7 +261,7 @@ class QuizCarrera extends Component {
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="21. OBJETIVO 3" style={{ width: 230, height: 150 }}>
+                  <Card title="21. OBJETIVO 3" style={{ width: 230, height: 150 }} headStyle={{background:"#f5222d"}}>
                     <p>
 
                     </p>
@@ -279,17 +279,17 @@ class QuizCarrera extends Component {
               <p>¿Cuáles son tus metaobjetivos de trascendencia personal y de trascendencia colectiva?</p>
               <Row gutter={30}>
                 <Col span={5} offset={7}>
-                  <Card title="22. METAOBJETIVO" style={{ width: 280 }}>
+                  <Card title="22. METAOBJETIVO" style={{ width: 280 }} headStyle={{background:"#9254de"}}>
                     <p>¿Para qué quieres lograr tus objetivos? (Nota: Pregúntate tres veces ¿para qué?)
                      <br /> <i>(Ej. ¿Para qué quieres poner tu negocio?: Para ser libre financieramente.
-                        ¿Y para qué?: Para hacer lo que me gusta
+                          ¿Y para qué?: Para hacer lo que me gusta
                       ¿Y para qué?: Para sentirme pleno)</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="metaobjetivo" maxlength="70" placeholder="Palabras clave" />
                   </Card>
                 </Col>
 
                 <Col span={4}>
-                  <Card title="22b. TRASCENDENCIA" style={{ width: 280 }}>
+                  <Card title="22b. TRASCENDENCIA" style={{ width: 280 }} headStyle={{background:"#9254de"}}>
                     <br /><br />
                     <p>¿A dónde te llevará este proyecto?
                     <br />¿A quién impactará?
@@ -309,7 +309,7 @@ class QuizCarrera extends Component {
               <h3>CREATIVIDAD</h3>
               <Row gutter={30}>
                 <Col span={4} offset={2}>
-                  <Card title="PREGUNTA AL AZAR 1" style={{ width: 230, height: 250 }}>
+                  <Card title="PREGUNTA AL AZAR 1" style={{ width: 230, height: 250 }} headStyle={{background:"#ffec3d"}}>
                     <p>
 
                     </p>
@@ -317,28 +317,28 @@ class QuizCarrera extends Component {
                 </Col>
 
                 <Col span={4}>
-                  <Card title="PREGUNTA AL AZAR 2" style={{ width: 230, height: 250 }}>
+                  <Card title="PREGUNTA AL AZAR 2" style={{ width: 230, height: 250 }} headStyle={{background:"#ffec3d"}}>
                     <p>
 
                     </p>
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="PREGUNTA AL AZAR 3" style={{ width: 230, height: 250 }}>
+                  <Card title="PREGUNTA AL AZAR 3" style={{ width: 230, height: 250 }} headStyle={{background:"#ffec3d"}}>
                     <p>
 
                     </p>
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="PREGUNTA AL AZAR 4" style={{ width: 230, height: 250 }}>
+                  <Card title="PREGUNTA AL AZAR 4" style={{ width: 230, height: 250 }} headStyle={{background:"#ffec3d"}}>
                     <p>
 
                     </p>
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="PREGUNTA AL AZAR 5" style={{ width: 230, height: 250 }}>
+                  <Card title="PREGUNTA AL AZAR 5" style={{ width: 230, height: 250 }} headStyle={{background:"#ffec3d"}}>
                     <p>
 
                     </p>
@@ -357,19 +357,19 @@ class QuizCarrera extends Component {
               <h3>TÁCTICAS</h3>
               <Row gutter={30}>
                 <Col span={4} offset={6}>
-                  <Card title="11. TÁCTICA 1" style={{ width: 230, height: 180 }}>
+                  <Card title="11. TÁCTICA 1" style={{ width: 230, height: 180 }} headStyle={{background:"#ffa940"}}>
                     <p><i>Ej. Hacer una campaña publicitaria.</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="tactica1" maxlength="70" placeholder="Palabras clave" />
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="12. TÁCTICA 2" style={{ width: 230, height: 180 }}>
+                  <Card title="12. TÁCTICA 2" style={{ width: 230, height: 180 }} headStyle={{background:"#ffa940"}}>
                     <p><i>Ej. Comunicar a mi equipo/familia mi estrategia</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="tactica2" maxlength="70" placeholder="Palabras clave" />
                   </Card>
                 </Col>
                 <Col span={4}>
-                  <Card title="13. TÁCTICA 3" style={{ width: 230, height: 180 }}>
+                  <Card title="13. TÁCTICA 3" style={{ width: 230, height: 180 }} headStyle={{background:"#ffa940"}}>
                     <p><i>Ej. bajar costos</i></p>
                     <Input className="inputmeasure" onChange={this.handleInput} name="tactica3" maxlength="70" placeholder="Palabras clave" />
                   </Card>
@@ -377,13 +377,14 @@ class QuizCarrera extends Component {
               </Row>
             </div>
             <p> Cuando termines de trabajar con tu tablero, imprímelo y colócalo en un lugar donde lo tengas a la vista la mayor parte de tu día y que puedas verlo en modo “zoom-out”.
-            <Form.Item>
-                <Input type="submit" value="Tablero con mi estrategia" style={{ width: '20vw', marginRight: '0vw', marginTop: '1vh' }} />
-              </Form.Item>
+            
               <i> <b> El tablero de vida y de negocios es una herramienta que nos permite actuar tomando en cuenta todos los espectros en la vida del Ser Humano.</b></i>
             </p>
           </div>
         </div>
+        <div>
+          <Link to="/BoardCarrera"><Button type="danger">Tablero con mi estrategia</Button></Link>
+          </div>
       </div >
     )
   }
