@@ -42,7 +42,8 @@ router.post('/signup', (req, res, next) => {
           http://localhost:3000/api/auth/confirm/${user.confirmationCode}
           Bienvenido a tu sesión de coaching de Estrategia LQ® &copy.`
       })
-      res.status(201).redirect('http://localhost:3001/login')
+      res.status(201).json({ message: 'User created' })
+      //res.status(201).redirect('http://localhost:3001/login')
     })
     .catch((err) => res.status(500).json({ err }));
 });

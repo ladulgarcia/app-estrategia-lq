@@ -355,7 +355,9 @@ class QuizVida extends Component {
                 <Col span={4} offset={2}>
                   <Card title="PREGUNTA AL AZAR 1" style={{ width: 230, height: 250 }} headStyle={{ background: "#ffec3d" }}>
                     <p>
-
+                      <b> ENFOQUE</b>
+                      <br />
+                      ¿En qué vale la pena que concentres tu atención en los próximos 3 meses?
                     </p>
                   </Card>
                 </Col>
@@ -363,28 +365,36 @@ class QuizVida extends Component {
                 <Col span={4}>
                   <Card title="PREGUNTA AL AZAR 2" style={{ width: 230, height: 250 }} headStyle={{ background: "#ffec3d" }}>
                     <p>
-
+                      <b>  FUTURO</b>
+                      Aléjate 3 metros y 10 años… ¿Qué es lo más importante de este proyecto?
+                    <br />
                     </p>
                   </Card>
                 </Col>
                 <Col span={4}>
                   <Card title="PREGUNTA AL AZAR 3" style={{ width: 230, height: 250 }} headStyle={{ background: "#ffec3d" }}>
                     <p>
-
+                      <b> FLUIR</b>
+                      ¿Cómo puedes ajustar o cambiar tus objetivos para aprovechar mejor tus talentos?
+                    <br />
                     </p>
                   </Card>
                 </Col>
                 <Col span={4}>
                   <Card title="PREGUNTA AL AZAR 4" style={{ width: 230, height: 250 }} headStyle={{ background: "#ffec3d" }}>
                     <p>
-
+                      <b>  LOCURA</b>
+                      <br />
+                      Menciona 3 locuras con las que sorprenderías a todos.
                     </p>
                   </Card>
                 </Col>
                 <Col span={4}>
                   <Card title="PREGUNTA AL AZAR 5" style={{ width: 230, height: 250 }} headStyle={{ background: "#ffec3d" }}>
                     <p>
-
+                      <b> PREMISA LQ </b>
+                      <br />
+                      ¿Qué podrías cambiar de ti que revolucionaría tú entorno?
                     </p>
                   </Card>
                 </Col>
