@@ -22,3 +22,7 @@ code {
 .greencard {
   fill: aqua !important;
 }
+
+.fontsizeHome {
+  font-size: 1.2rem ;
+}

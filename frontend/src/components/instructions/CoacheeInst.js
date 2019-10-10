@@ -1,15 +1,27 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 // import { Card } from 'antd';
-import { Button } from 'antd';
+import { Button, Breadcrumb, Icon } from 'antd';
 
 class CoacheeInst extends Component {
+  logout() {
+    localStorage.clear();
+    window.location.href = '/';
+}
   render() {
     return (
       <div>
         <div>
-          <Link to="/signup">Sign up</Link>
-          <Link to="Login">Log in</Link>
+          <Breadcrumb>
+            <Breadcrumb.Item href="/">
+              <Icon type="home" theme="filled" />
+              <span>Inicio</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item onClick={this.logout}>
+              <Icon type="close-circle" theme="filled" />
+              <span>Salir</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
         </div>
         <div >
           <div>

@@ -1,67 +1,65 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-// import { Card } from 'antd';
+// import { Link } from 'react-router-dom'
+import { Breadcrumb, Icon } from 'antd';
+
 
 class Homepage extends Component {
+  
   render() {
     return (
       <div>
-        <div style={{ background: '#ECECEC', padding: '5px' }}></div>
         <div>
-          <Link to="/signup">Sign up</Link>
-          <Link to="Login">Log in</Link>
+          <Breadcrumb>
+          <Breadcrumb.Item href="/">
+              <Icon type="home" theme="filled" />
+              <span>Inicio</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item href="/signup">
+              <Icon type="edit" theme="filled" />
+              <span>Registro</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item href="/login">
+              <Icon type="unlock" theme="filled" />
+              <span>Iniciar sesión</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item onClick={this.logout}>
+              <Icon type="close-circle" theme="filled" />
+              <span>Salir</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
         </div>
-        <div >
+        <div style={{ background: 'white', padding: '60px' }}>
+
+          {/* <div style={{ background: '#595959', padding: '80px', color: "white"}}> */}
+
           <div>
-            <h1>Estrategia LQ® - proyecto de Vida y Carrera</h1>
-            <p>Es la herramienta de Liderazgo Quántico que te ayuda a definir una estrategia clara para lograr tus proyectos tanto en el área personal como profesional. <br />
-              Estrategia LQ fue creada por Jorge Cuevas, creador del sistema Liderazgo Quántico®, para empresarios, maestros, vendedores, estudiantes, amas de casa, <br />
-              profesionistas y toda persona que desee tener claro dónde está, hacia dónde quiere ir y cómo lo logrará. <br />
+            <h1><b>Estrategia LQ® - proyecto de Vida y Carrera</b></h1>
+            <p className='fontsizeHome'>Es la herramienta de Liderazgo Quántico que te ayuda a definir una estrategia clara
+                <br />para lograr tus proyectos tanto en el área personal como profesional. <br />
+              <br />
             </p>
-            <p>
-              <b><h2> ¿Cuáles son los beneficios de utilizar Estrategia LQ?</h2></b>
-              <br/>Claridad para desarrollar proyectos 
-              <br/>Desarrollo de la visión “zoom-out” para considerar el todo.
-              <br/> Identificación de obstáculos y recursos propios.
-              <br/>  Reconocimiento del auto sabotaje.
-              <br/>  Desarrollo del pensamiento estratégico.
-              <br/>  Ayuda a enfocarse en acciones que generan resultados exponenciales.
-              <br/>  Evita el desperdicio de energía en acciones sin transcendencia.
-              <br/>  Da flexibilidad para transformar estrategias.
-              <br/>  Disociación: reduce los niveles de estrés y aumenta los de motivación.
-              <br/>  Práctico: puedes diseñar tu  propio tablero, imprimirlo y modificar tu estrategia en cualquier momento.
+
+          </div>
+
+          <div>
+
+            <p className='fontsizeHome'>
+              <b><h2> ¿Beneficios de utilizar Estrategia LQ?</h2></b>
+              <br />Claridad para desarrollar proyectos .
+              <br />Desarrollo de la visión “zoom-out”.
+              <br /> Identificación de obstáculos y recursos propios.
+              <br />  Reconocimiento del auto sabotaje.
+              <br />  Desarrollo del pensamiento estratégico.
+              <br />  Ayuda a enfocarse en acciones que generan resultados exponenciales.
+              <br />  Evita el desperdicio de energía en acciones sin transcendencia.
+              <br />  Da flexibilidad para transformar estrategias.
             </p>
           </div>
         </div>
       </div>
+
     )
   }
 }
 
 export default Homepage;
-
-
-// import React, {Component} from 'react';
-// import {MyContext} from '../context';
-// import {Button} from 'antd';
-// import {Link} from 'react-router-dom'
-
-// class Homepage extends Component {
-
-//   render() {
-//     return (
-//       <div>
-//         <div>
-//           <div>
-//             <p>Estrategia LQ®</p>
-//             <p>Proyecto de Vida y Carrera con Estrategia LQ®</p>
-//             <Link to="/signup"> <Button type="submit" value="signup" style={{}}>Sign up</Button></Link>
-//             <Link to="/login"> <Button type="submit" value="Login" style={{}}>Login</Button></Link>
-//           </div >
-//         </div >
-//       </div >
-//     )
-//   }
-// }
-// Homepage.contextType = MyContext;
-// export default Homepage;

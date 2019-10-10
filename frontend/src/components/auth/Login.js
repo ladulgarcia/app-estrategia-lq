@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AUTH_SERVICE from '../../services/index';
 // import { Link } from 'react-router-dom'
-import { Input, Form } from 'antd';
+import { Input, Form, Breadcrumb, Icon } from 'antd';
 import { MyContext } from '../../context';
 
 class Login extends Component {
@@ -36,19 +36,33 @@ class Login extends Component {
 
   render() {
     return (
-      <div style={{}}>
+      <div>
+        <div>
+          <Breadcrumb>
+            <Breadcrumb.Item href="/">
+              <Icon type="home" theme="filled" />
+              <span>Inicio</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item href="/signup">
+              <Icon type="edit" theme="filled" />
+              <span>Registro</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
+        <br />
+
         <div style={{ display: '', flexDirection: '', justifyContent: '' }}>
           <h1>Comencemos</h1>
-          <p style={{ fontSize: '', lineHeight: '' }}>¿Ya sabes en qué Estrategia LQ® vas a trabajar hoy?</p>
-          <p>Igresa aquí con tu usuario y contraseña</p>
+          <p style={{ fontSize: '1.2rem', lineHeight: '' }}>¿Ya sabes en qué Estrategia LQ® vas a trabajar hoy?</p>
+          <p><h3>Ingresa aquí con tu usuario y contraseña</h3></p>
           <Form onSubmit={this.onSubmit} style={{ marginTop: '', width: '' }}>
             <Form.Item>
-              <label style={{ fontSize: '', color: "", padding: "" }}>Username</label>
+              <label style={{ fontSize: '', color: "", padding: "" }}>Usuario</label>
               <br></br>
               <Input onChange={this.handleInput} type="text" name="username" style={{ width: '20vw', backgroundColor: "" }} />
             </Form.Item>
             <Form.Item>
-              <label style={{ fontSize: '', color: "", padding: "" }}>Password</label>
+              <label style={{ fontSize: '', color: "", padding: "" }}>Contraseña</label>
               <br></br>
               <Input
                 onChange={this.handleInput}

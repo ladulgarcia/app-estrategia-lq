@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AUTH_SERVICE from '../../services/index';
 //import { Link } from 'react-router-dom'
-import { Input, Form } from 'antd';
+import { Input, Form, Breadcrumb, Icon } from 'antd';
 
 class Signup extends Component {
   state = {
@@ -32,31 +32,40 @@ class Signup extends Component {
       .catch((error) => {
         console.log(error);
       });
-    this.props.history.push('/profile');
+    this.props.history.push('/login');
   };
 
   render() {
     return (
       <div>
-         <div style={{ background: '#ECECEC', padding: '5px' }}>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/">
+            <Icon type="home" theme="filled" />
+            <span>Inicio</span>
+          </Breadcrumb.Item>
+        </Breadcrumb>
+
+        {/* <div style={{ background: 'peru', padding: '50px' }}> */}
+        <div style={{ height: '90vh', background: '', backgroundSize: 'cover' }}>
           <div>
             <div>
-              <h1>Sign Up</h1>
+              <br/>
+              <h1>Registro</h1>
               <div>
                 <Form onSubmit={this.onSubmit} style={{ marginTop: '5vh' }}>
                   <Form.Item>
                     <label>Username</label>
-                   <br/>
+                    <br />
                     <Input onChange={this.handleInput} type="text" name="username" style={{ width: '20vw', backgroundColor: "#f0efe9" }} />
                   </Form.Item>
                   <Form.Item>
                     <label>email</label>
-                    <br/>
+                    <br />
                     <Input onChange={this.handleInput} type="email" name="email" style={{ width: '20vw', backgroundColor: "#f0efe9" }} />
                   </Form.Item>
                   <Form.Item>
                     <label>Password</label>
-                    <br/>
+                    <br />
                     <Input
                       onChange={this.handleInput}
                       type="password"
@@ -66,7 +75,7 @@ class Signup extends Component {
                   </Form.Item>
                   <Form.Item>
                     <label style={{ fontSize: '1rem', color: "#bdbdbb" }}>Role</label>
-                    <br/>
+                    <br />
                     <select
                       onChange={this.onSelect}
                       type="text"
@@ -80,7 +89,7 @@ class Signup extends Component {
                     </select>
                   </Form.Item>
                   <Form.Item>
-                    <Input type="submit" value="Signup" style={{ width: '20vw' }} />
+                    <Input type="submit" value="Signp" style={{ width: '20vw' }} />
                   </Form.Item>
                 </Form>
               </div>

@@ -1,19 +1,28 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from 'antd';
+import { Button, Breadcrumb, Icon } from 'antd';
 // import { Input, Form } from 'antd';
 
 class CoachInst extends Component {
+  logout() {
+    localStorage.clear();
+    window.location.href = '/';
+  }
   render() {
     return (
       <div>
-
-        {/* ********************************** SIGN UP / LOGIN ********************************** */}
-        <div>
-          <Link to="/signup">Sign up</Link>
-          <Link to="Login">Log in</Link>
+ <div>
+          <Breadcrumb>
+            <Breadcrumb.Item href="/">
+              <Icon type="home" theme="filled" />
+              <span>Inicio</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item onClick={this.logout}>
+              <Icon type="close-circle" theme="filled" />
+              <span>Salir</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
         </div>
-
         {/* ********************************** CONDICION LQ ********************************** */}
         <div>
           <h1>PRELIMINARES COMO COACH</h1>
